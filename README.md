@@ -107,28 +107,4 @@ Use the scripts defined in each module.
 npm run dev
 ```
 
-### 5. Access locally
 
-`http://localhost:3000`
-
-## Team
-
-| Name | Roll Number | Contribution Area |
-|------|-------------|-------------------|
-| Shaheer Zaman | 22I-0805 | Frontend, Integration |
-| Najam Hassan | 22I-1332 | ML Model, Backend |
-| Aliyan Zafar | 20I-2414 | Data Engineering, Testing |
-
-**Supervisor:** Mr. Almas Khan, FAST NUCES Islamabad
-
-## Institutional Context
-
-Final Year Project (FYP), FAST NUCES Islamabad.
-
-## Future Direction
-
-The long-term vision is to continuously improve translation quality, reduce latency, and expand practical adoption in educational, clinical, and workplace settings to advance inclusive communication infrastructure in Pakistan.
-
-## License
-
-Add an open-source license file if public reuse and contribution are intended.
