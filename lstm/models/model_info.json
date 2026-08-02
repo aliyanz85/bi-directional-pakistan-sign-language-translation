@@ -1,0 +1,16 @@
+{
+  "timestamp": "20251203_013652",
+  "classes": [
+    "good",
+    "funny"
+  ],
+  "sequence_length": 30,
+  "feature_size": 1662,
+  "test_accuracy": 1.0,
+  "test_loss": 0.7652333378791809,
+  "total_parameters": 928850,
+  "epochs_trained": 200,
+  "best_val_accuracy": 1.0,
+  "augmentation_factor": 10,
+  "training_samples": 110
+}

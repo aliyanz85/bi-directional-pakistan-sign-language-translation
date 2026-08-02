@@ -1,0 +1,69 @@
+{
+  "num_classes": 9,
+  "class_names": [
+    "careful",
+    "cheap",
+    "crazy",
+    "dangerous",
+    "decent",
+    "dumb",
+    "fantastic",
+    "far",
+    "fearful"
+  ],
+  "num_samples": 227,
+  "feature_dim": 188,
+  "sequence_length": 60,
+  "extraction_stats": {
+    "total_videos": 227,
+    "successful": 227,
+    "failed": 0,
+    "classes": {
+      "careful": {
+        "total": 23,
+        "successful": 23,
+        "failed": 0
+      },
+      "cheap": {
+        "total": 25,
+        "successful": 25,
+        "failed": 0
+      },
+      "crazy": {
+        "total": 26,
+        "successful": 26,
+        "failed": 0
+      },
+      "dangerous": {
+        "total": 28,
+        "successful": 28,
+        "failed": 0
+      },
+      "decent": {
+        "total": 28,
+        "successful": 28,
+        "failed": 0
+      },
+      "dumb": {
+        "total": 27,
+        "successful": 27,
+        "failed": 0
+      },
+      "fantastic": {
+        "total": 23,
+        "successful": 23,
+        "failed": 0
+      },
+      "far": {
+        "total": 23,
+        "successful": 23,
+        "failed": 0
+      },
+      "fearful": {
+        "total": 24,
+        "successful": 24,
+        "failed": 0
+      }
+    }
+  }
+}

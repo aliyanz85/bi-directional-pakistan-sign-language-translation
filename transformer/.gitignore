@@ -1,0 +1,104 @@
+# .gitignore for VOICE PSL Project
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Data files (large datasets)
+data/raw_videos/**/*.mp4
+data/raw_videos/**/*.avi
+data/raw_videos/**/*.mov
+data/extracted_landmarks/*.pkl
+data/augmented/
+*.npy
+
+# Keep directory structure
+!data/raw_videos/.gitkeep
+!data/extracted_landmarks/.gitkeep
+!data/augmented/.gitkeep
+
+# Model files (can be large)
+models/saved_models/**/*.h5
+models/saved_models/**/*.keras
+models/inference/**/*.tflite
+models/inference/**/model.json
+models/inference/**/group*.bin
+*.pb
+*.pbtxt
+
+# TensorBoard logs
+logs/
+*.log
+
+# React / Node
+frontend/node_modules/
+frontend/build/
+frontend/.pnp
+frontend/.pnp.js
+frontend/coverage/
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Model weights (optional - uncomment if you want to version control models)
+# !models/saved_models/best_model.h5
+# !models/inference/tfjs_model/
+
+# NPM
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock

@@ -1,0 +1,9 @@
+{
+  "test_loss": 0.7634549140930176,
+  "test_accuracy": 0.9824561476707458,
+  "test_top3_accuracy": 1.0,
+  "test_top5_accuracy": 1.0,
+  "test_samples": 57,
+  "train_samples": 680,
+  "val_samples": 34
+}

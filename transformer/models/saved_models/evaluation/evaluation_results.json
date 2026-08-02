@@ -1,0 +1,354 @@
+{
+  "accuracy": 0.8095238095238095,
+  "top3_accuracy": 0.9841269841269841,
+  "top5_accuracy": 0.9841269841269841,
+  "latency": {
+    "mean_ms": 86.06394920091603,
+    "median_ms": 85.49379999749362,
+    "std_ms": 2.1511036113374016,
+    "min_ms": 83.28580006491393,
+    "max_ms": 95.07809998467565,
+    "p95_ms": 89.27625997457653,
+    "p99_ms": 94.29497794015333
+  },
+  "confidence_stats": {
+    "overall": {
+      "mean": 0.7425802946090698,
+      "median": 0.7923400402069092,
+      "std": 0.16137225925922394
+    },
+    "correct_predictions": {
+      "mean": 0.7689381837844849,
+      "median": 0.8073055148124695
+    },
+    "incorrect_predictions": {
+      "mean": 0.6305594444274902,
+      "median": 0.5617467164993286
+    }
+  },
+  "error_analysis": {
+    "total_errors": 12,
+    "error_rate": 0.19047619047619047,
+    "sample_errors": [
+      {
+        "sample_idx": 5,
+        "true_class": "new",
+        "predicted_class": "foreign",
+        "confidence": 0.8801062107086182
+      },
+      {
+        "sample_idx": 7,
+        "true_class": "new",
+        "predicted_class": "foreign",
+        "confidence": 0.8967456221580505
+      },
+      {
+        "sample_idx": 19,
+        "true_class": "cheap",
+        "predicted_class": "dumb",
+        "confidence": 0.7769121527671814
+      },
+      {
+        "sample_idx": 20,
+        "true_class": "yes",
+        "predicted_class": "dangerous",
+        "confidence": 0.48484092950820923
+      },
+      {
+        "sample_idx": 22,
+        "true_class": "good",
+        "predicted_class": "fantastic",
+        "confidence": 0.7923400402069092
+      },
+      {
+        "sample_idx": 26,
+        "true_class": "dumb",
+        "predicted_class": "smart",
+        "confidence": 0.5233432054519653
+      },
+      {
+        "sample_idx": 43,
+        "true_class": "new",
+        "predicted_class": "no",
+        "confidence": 0.6001501679420471
+      },
+      {
+        "sample_idx": 48,
+        "true_class": "less",
+        "predicted_class": "book",
+        "confidence": 0.8701721429824829
+      },
+      {
+        "sample_idx": 50,
+        "true_class": "heavy",
+        "predicted_class": "late",
+        "confidence": 0.4365682899951935
+      },
+      {
+        "sample_idx": 51,
+        "true_class": "interesting",
+        "predicted_class": "cheap",
+        "confidence": 0.4138163924217224
+      },
+      {
+        "sample_idx": 53,
+        "true_class": "good",
+        "predicted_class": "fantastic",
+        "confidence": 0.3969559371471405
+      },
+      {
+        "sample_idx": 59,
+        "true_class": "intelligent",
+        "predicted_class": "smart",
+        "confidence": 0.4947619140148163
+      }
+    ],
+    "most_confused_pairs": [
+      {
+        "true_class": "good",
+        "predicted_class": "fantastic",
+        "count": 2
+      },
+      {
+        "true_class": "new",
+        "predicted_class": "foreign",
+        "count": 2
+      },
+      {
+        "true_class": "cheap",
+        "predicted_class": "dumb",
+        "count": 1
+      },
+      {
+        "true_class": "dumb",
+        "predicted_class": "smart",
+        "count": 1
+      },
+      {
+        "true_class": "heavy",
+        "predicted_class": "late",
+        "count": 1
+      },
+      {
+        "true_class": "intelligent",
+        "predicted_class": "smart",
+        "count": 1
+      },
+      {
+        "true_class": "interesting",
+        "predicted_class": "cheap",
+        "count": 1
+      },
+      {
+        "true_class": "less",
+        "predicted_class": "book",
+        "count": 1
+      },
+      {
+        "true_class": "new",
+        "predicted_class": "no",
+        "count": 1
+      },
+      {
+        "true_class": "yes",
+        "predicted_class": "dangerous",
+        "count": 1
+      }
+    ]
+  },
+  "classification_report": {
+    "alert": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "book": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "careful": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "cheap": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
+      "support": 3.0
+    },
+    "crazy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "dangerous": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 2.0
+    },
+    "decent": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "dumb": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "excited": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "extreme": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "fantastic": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "fearful": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "foreign": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
+    },
+    "funny": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "good": {
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1-score": 0.75,
+      "support": 5.0
+    },
+    "heavy": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "important": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "intelligent": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "interesting": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.8888888888888888,
+      "support": 5.0
+    },
+    "late": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 2.0
+    },
+    "less": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 3.0
+    },
+    "new": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 3.0
+    },
+    "no": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
+      "support": 1.0
+    },
+    "noisy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 6.0
+    },
+    "peaceful": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "quick": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "ready": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "secure": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "smart": {
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1-score": 0.5,
+      "support": 1.0
+    },
+    "yes": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "accuracy": 0.8095238095238095,
+    "macro avg": {
+      "precision": 0.6777777777777777,
+      "recall": 0.7244444444444444,
+      "f1-score": 0.6846296296296297,
+      "support": 63.0
+    },
+    "weighted avg": {
+      "precision": 0.8174603174603174,
+      "recall": 0.8095238095238095,
+      "f1-score": 0.7983245149911816,
+      "support": 63.0
+    }
+  }
+}

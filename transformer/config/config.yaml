@@ -1,0 +1,154 @@
+# Project Configuration
+project:
+  name: "VOICE PSL"
+  version: "1.0.0"
+  description: "Pakistan Sign Language Recognition System"
+
+# Data Configuration
+data:
+  raw_videos_dir: "data/raw_videos"
+  landmarks_dir: "data/extracted_landmarks"
+  augmented_dir: "data/augmented"
+
+  # Expected dataset structure
+  num_words: 32
+  videos_per_word: 8
+
+  # Preprocessing
+  target_sequence_length: 60
+  target_fps: 30
+
+  # Augmentation (reduced for faster training)
+  augmentation_factor: 3
+  augmentation_techniques:
+    temporal:
+      - time_warp
+      - speed_variation
+      - frame_dropping
+      - temporal_jitter
+    spatial:
+      - hand_rotation
+      - scale_variation
+      - translation_shift
+      - gaussian_noise
+      - perspective_transform
+
+# Model Configuration
+model:
+  architecture: "tcn_transformer" # Options: tcn_transformer, lightweight, lstm
+
+  # Input/Output
+  sequence_length: 60
+  feature_dim: 188 # 2 hands × 94 features per hand
+  num_classes: 32
+
+  # TCN Configuration
+  tcn:
+    filters: 128
+    num_layers: 4
+    kernel_size: 3
+    dropout_rate: 0.3
+
+  # Transformer Configuration
+  transformer:
+    num_blocks: 2
+    num_heads: 4
+    ff_dim: 256
+    dropout_rate: 0.15
+
+# Training Configuration
+training:
+  # Optimization
+  optimizer: "adamw"
+  learning_rate: 0.001
+  weight_decay: 0.0001
+
+  # Loss
+  loss: "categorical_crossentropy"
+  label_smoothing: 0.1
+  use_focal_loss: false
+
+  # Training
+  batch_size: 16
+  epochs: 100
+  validation_split: 0.2
+
+  # Callbacks
+  early_stopping:
+    monitor: "val_loss"
+    patience: 15
+    min_delta: 0.0001
+
+  reduce_lr:
+    monitor: "val_loss"
+    factor: 0.5
+    patience: 5
+    min_lr: 0.000001
+
+  # Cross-validation
+  use_cross_validation: false
+  num_folds: 5
+
+# Evaluation Configuration
+evaluation:
+  test_split: 0.2
+  metrics:
+    - accuracy
+    - top3_accuracy
+    - top5_accuracy
+    - per_class_f1
+
+  # Latency benchmarking
+  benchmark_samples: 100
+
+  # Confidence analysis
+  confidence_threshold: 0.7
+
+# Deployment Configuration
+deployment:
+  # TensorFlow.js
+  tfjs:
+    quantization: "uint8" # Options: uint8, uint16, none
+    weight_shard_size_mb: 4
+    output_dir: "models/inference/tfjs_model"
+
+  # TFLite (optional)
+  tflite:
+    optimize: true
+    quantize: true
+    output_dir: "models/inference/tflite"
+
+  # Inference
+  inference:
+    confidence_threshold: 0.7
+    top_k: 3
+    smoothing_window: 5
+    buffer_size: 60
+
+# MediaPipe Configuration
+mediapipe:
+  hands:
+    max_num_hands: 2
+    model_complexity: 1
+    min_detection_confidence: 0.7
+    min_tracking_confidence: 0.6
+
+  camera:
+    width: 640
+    height: 480
+    fps: 30
+
+# Performance Targets
+targets:
+  accuracy: 0.80 # 80% minimum
+  top3_accuracy: 0.95 # 95% minimum
+  latency_ms: 50 # <50ms inference time
+  model_size_mb: 5 # <5MB after quantization
+  fps: 30 # 30 FPS minimum
+
+# Logging
+logging:
+  level: "INFO"
+  tensorboard_dir: "logs/tensorboard"
+  csv_dir: "logs/csv"
+  save_frequency: "epoch"

@@ -1,0 +1,258 @@
+[
+  {
+    "id": "alert",
+    "name": "Alert",
+    "description": "Sign for alert or warning",
+    "file_path": "/animations/alert.glb",
+    "category": "communication",
+    "tags": ["warning", "attention", "important"]
+  },
+  {
+    "id": "book",
+    "name": "Book",
+    "description": "Sign for book or reading",
+    "file_path": "/animations/book.glb",
+    "category": "objects",
+    "tags": ["education", "reading", "learning"]
+  },
+  {
+    "id": "careful",
+    "name": "Careful",
+    "description": "Sign for being careful or cautious",
+    "file_path": "/animations/careful.glb",
+    "category": "adjectives",
+    "tags": ["warning", "caution", "attention"]
+  },
+  {
+    "id": "cheap",
+    "name": "Cheap",
+    "description": "Sign for cheap or inexpensive",
+    "file_path": "/animations/cheap.glb",
+    "category": "adjectives",
+    "tags": ["price", "value", "cost"]
+  },
+  {
+    "id": "crazy",
+    "name": "Crazy",
+    "description": "Sign for crazy or wild",
+    "file_path": "/animations/crazy.glb",
+    "category": "adjectives",
+    "tags": ["emotion", "mental", "wild"]
+  },
+  {
+    "id": "dangerous",
+    "name": "Dangerous",
+    "description": "Sign for dangerous or hazardous",
+    "file_path": "/animations/dangerous.glb",
+    "category": "adjectives",
+    "tags": ["warning", "hazard", "risk"]
+  },
+  {
+    "id": "decent",
+    "name": "Decent",
+    "description": "Sign for decent or acceptable",
+    "file_path": "/animations/decent.glb",
+    "category": "adjectives",
+    "tags": ["quality", "good", "acceptable"]
+  },
+  {
+    "id": "dumb",
+    "name": "Dumb",
+    "description": "Sign for dumb or foolish",
+    "file_path": "/animations/dumb.glb",
+    "category": "adjectives",
+    "tags": ["foolish", "silly", "stupid"]
+  },
+  {
+    "id": "excited",
+    "name": "Excited",
+    "description": "Sign for excited or enthusiastic",
+    "file_path": "/animations/excited.glb",
+    "category": "emotions",
+    "tags": ["emotion", "happy", "energetic"]
+  },
+  {
+    "id": "extreme",
+    "name": "Extreme",
+    "description": "Sign for extreme or intense",
+    "file_path": "/animations/extreme.glb",
+    "category": "adjectives",
+    "tags": ["intense", "maximum", "high"]
+  },
+  {
+    "id": "fantastic",
+    "name": "Fantastic",
+    "description": "Sign for fantastic or excellent",
+    "file_path": "/animations/fantastic.glb",
+    "category": "adjectives",
+    "tags": ["excellent", "great", "amazing"]
+  },
+  {
+    "id": "far",
+    "name": "Far",
+    "description": "Sign for far or distant",
+    "file_path": "/animations/far.glb",
+    "category": "adjectives",
+    "tags": ["distance", "location", "remote"]
+  },
+  {
+    "id": "fearful",
+    "name": "Fearful",
+    "description": "Sign for fearful or scared",
+    "file_path": "/animations/fearful.glb",
+    "category": "emotions",
+    "tags": ["emotion", "scared", "afraid"]
+  },
+  {
+    "id": "foreign",
+    "name": "Foreign",
+    "description": "Sign for foreign or international",
+    "file_path": "/animations/foreign.glb",
+    "category": "adjectives",
+    "tags": ["international", "overseas", "external"]
+  },
+  {
+    "id": "funny",
+    "name": "Funny",
+    "description": "Sign for funny or humorous",
+    "file_path": "/animations/funny.glb",
+    "category": "adjectives",
+    "tags": ["humor", "comedy", "amusing"]
+  },
+  {
+    "id": "good",
+    "name": "Good",
+    "description": "Sign for good or positive",
+    "file_path": "/animations/good.glb",
+    "category": "adjectives",
+    "tags": ["positive", "nice", "excellent"]
+  },
+  {
+    "id": "healthy",
+    "name": "Healthy",
+    "description": "Sign for healthy or well",
+    "file_path": "/animations/healthy.glb",
+    "category": "adjectives",
+    "tags": ["health", "wellness", "fit"]
+  },
+  {
+    "id": "heavy",
+    "name": "Heavy",
+    "description": "Sign for heavy or weighty",
+    "file_path": "/animations/heavy.glb",
+    "category": "adjectives",
+    "tags": ["weight", "mass", "burden"]
+  },
+  {
+    "id": "important",
+    "name": "Important",
+    "description": "Sign for important or significant",
+    "file_path": "/animations/important.glb",
+    "category": "adjectives",
+    "tags": ["significant", "critical", "essential"]
+  },
+  {
+    "id": "intelligent",
+    "name": "Intelligent",
+    "description": "Sign for intelligent or smart",
+    "file_path": "/animations/intelligent.glb",
+    "category": "adjectives",
+    "tags": ["smart", "clever", "bright"]
+  },
+  {
+    "id": "interesting",
+    "name": "Interesting",
+    "description": "Sign for interesting or engaging",
+    "file_path": "/animations/interesting.glb",
+    "category": "adjectives",
+    "tags": ["engaging", "fascinating", "captivating"]
+  },
+  {
+    "id": "late",
+    "name": "Late",
+    "description": "Sign for late or delayed",
+    "file_path": "/animations/late.glb",
+    "category": "time",
+    "tags": ["time", "delayed", "tardy"]
+  },
+  {
+    "id": "less",
+    "name": "Less",
+    "description": "Sign for less or fewer",
+    "file_path": "/animations/less.glb",
+    "category": "quantity",
+    "tags": ["quantity", "fewer", "reduced"]
+  },
+  {
+    "id": "new",
+    "name": "New",
+    "description": "Sign for new or fresh",
+    "file_path": "/animations/new.glb",
+    "category": "adjectives",
+    "tags": ["fresh", "modern", "recent"]
+  },
+  {
+    "id": "no",
+    "name": "No",
+    "description": "Sign for no or negative",
+    "file_path": "/animations/no.glb",
+    "category": "communication",
+    "tags": ["negative", "denial", "refusal"]
+  },
+  {
+    "id": "noisy",
+    "name": "Noisy",
+    "description": "Sign for noisy or loud",
+    "file_path": "/animations/noisy.glb",
+    "category": "adjectives",
+    "tags": ["loud", "sound", "volume"]
+  },
+  {
+    "id": "peaceful",
+    "name": "Peaceful",
+    "description": "Sign for peaceful or calm",
+    "file_path": "/animations/peaceful.glb",
+    "category": "emotions",
+    "tags": ["calm", "serene", "tranquil"]
+  },
+  {
+    "id": "quick",
+    "name": "Quick",
+    "description": "Sign for quick or fast",
+    "file_path": "/animations/quick.glb",
+    "category": "adjectives",
+    "tags": ["fast", "speed", "rapid"]
+  },
+  {
+    "id": "ready",
+    "name": "Ready",
+    "description": "Sign for ready or prepared",
+    "file_path": "/animations/ready.glb",
+    "category": "communication",
+    "tags": ["prepared", "set", "available"]
+  },
+  {
+    "id": "secure",
+    "name": "Secure",
+    "description": "Sign for secure or safe",
+    "file_path": "/animations/secure.glb",
+    "category": "adjectives",
+    "tags": ["safe", "protected", "stable"]
+  },
+  {
+    "id": "smart",
+    "name": "Smart",
+    "description": "Sign for smart or clever",
+    "file_path": "/animations/smart.glb",
+    "category": "adjectives",
+    "tags": ["clever", "intelligent", "bright"]
+  },
+  {
+    "id": "yes",
+    "name": "Yes",
+    "description": "Sign for yes or affirmative",
+    "file_path": "/animations/yes.glb",
+    "category": "communication",
+    "tags": ["affirmative", "agreement", "positive"]
+  }
+]

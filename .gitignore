@@ -1,0 +1,88 @@
+##############################################
+# PYTHON (voice-backend)
+##############################################
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# FastAPI / Uvicorn cache
+*.db
+*.sqlite3
+instance/
+.pybuilder/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.eggs/
+.wheels/
+
+##############################################
+# NODE / FRONTEND (voice-frontend + animation-player)
+##############################################
+# Dependencies
+node_modules/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+build/
+dist/
+.cache/
+out/
+.next/
+.vite/
+*.tsbuildinfo
+
+# Local env for Vite/React apps
+.env
+.env.local
+
+##############################################
+# OS / EDITOR / TOOLING
+##############################################
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+##############################################
+# DOCUMENTATION / GENERATED STATIC
+##############################################
+# Sphinx / mkdocs
+docs/_build/
+site/
+
+##############################################
+# EXTRA
+##############################################
+# AI tools
+.ruff_cache/
+.cursorignore
+.cursorindexingignore
+.claude
+
+# Python packaging extras
+.MANIFEST
+.Python
+helpers/
+backend_venv/
+*.pdf
